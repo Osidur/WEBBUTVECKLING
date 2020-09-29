@@ -1,3 +1,4 @@
+
 @mixin default {
     background-color: hotpink;
     color: black;
@@ -8,7 +9,7 @@
 #header{
     p{
         font-family: monospace;
-        color: $color;
+        @include default;
     }
 }
 
