@@ -1,5 +1,17 @@
+@mixin default {
+    background-color: hotpink;
+    color: black;
+    font-family: monospace;
+    font-size: 30px;
+}
+
 #header{
     p{
         font-family: monospace;
+        color: $color;
     }
+}
+
+div{
+    @include default;
 }
