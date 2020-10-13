@@ -1,0 +1,11 @@
+@mixin gridbody{
+    grid-template-rows: 50px auto 50px;
+}
+
+@mixin gridheader{
+    grid-template-columns: 50px 200px auto auto auto auto auto auto auto 250px;
+}
+
+@mixin gridfooter{
+    grid-template-columns: 250px auto auto auto 250px;
+}
