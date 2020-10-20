@@ -1,0 +1,12 @@
+//https://gridbyexample.com/examples/example29/
+
+@mixin testbox($bcolor, $color) {
+    background-color: $bcolor;
+    color: $color;
+}
+
+@mixin text($fontsize, $padding) {
+    font-size: $fontsize;
+    font-family: 'Courier New', Courier, monospace;
+    padding: $padding;
+}
