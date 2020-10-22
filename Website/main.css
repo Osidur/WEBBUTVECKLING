@@ -3,18 +3,35 @@ body {
 }
 
 .wrapper {
-  -ms-grid-rows: (minmax(200px, 1fr))[auto-fill];
-      grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 10px;
-  background-color: #444;
-  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10vh 80vh 10vh;
+      grid-template-rows: 10vh 80vh 10vh;
 }
 
-.box {
-  background-color: #444;
-  color: #fff;
-  font-size: 150%;
-  font-family: 'Courier New', Courier, monospace;
-  padding: 20px;
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 100px auto auto auto auto auto auto auto 150px;
+      grid-template-columns: 50px 100px auto auto auto auto auto auto auto 150px;
+}
+
+.headertext {
+  padding: 40px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+#emptyspace2 {
+  -webkit-column-span: 2;
+          column-span: 2;
+  background-color: green;
 }
 /*# sourceMappingURL=main.css.map */
