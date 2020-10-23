@@ -5,8 +5,8 @@
     color: $color;
 }
 
-@mixin text($fontsize, $padding) {
+@mixin text($fontsize, $bold) {
     font-size: $fontsize;
-    font-family: 'Courier New', Courier, monospace;
-    padding: $padding;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: $bold;
 }

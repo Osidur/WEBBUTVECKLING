@@ -11,20 +11,33 @@
 <body>
     <div class="wrapper">
         <div class="box header">
-            <div class="logo">BA</div>
-            <div id="emptyspace1"></div>
-            <div class="headertext white">white</div>
-            <div class="headertext red">red</div>
-            <div class="headertext yellow">yellow</div>
-            <div class="headertext green">green</div>
-            <div class="headertext blue">blue</div>
-            <div class="headertext purple">purple</div>
-            <div class="headertext black">black</div>
-            <div id="emptyspace2"></div>
+            <div class="text logo">BA</div>
+            <div class="text white" onclick="white()">white</div>
+            <div class="text red" onclick="red()">red</div>
+            <div class="text yellow" onclick="yellow()">yellow</div>
+            <div class="text green" onclick="green()">green</div>
+            <div class="text blue" onclick="blue()">blue</div>
+            <div class="text purple" onclick="purple()">purple</div>
+            <div class="text black" onclick="black()">black</div>
         </div>
-        <div class="box content">B</div>
-        <div class="box footer">C</div>
+        <div class="box content">
+            <div class="color">HOMEPAGE</div>
+            <div class="contenttext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur necessitatibus laborum corporis omnis quaerat eos dolor est esse non sequi voluptatibus error tempora voluptate nam laboriosam provident quas, ex delectus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, ut! Illo vel amet tempora reprehenderit cumque corrupti ab voluptates cum, porro quaerat in! Ex cum in iusto, itaque aperiam odio.</div>
+            <div class="gradient"></div>
+        </div>
+        <div class="box footer">
+            <div class="text logo">BA</div>
+            <div class="text contact">Contact</div>
+            <div class="text aboutus">About us</div>
+            <div class="text urmom">Ur mom</div>
+        </div>
       </div>
 </body>
+
+<script>
+    function white() {
+        document.getElementsByClassName("white").innerHTML = "white is a color. no, it's every color. ok.";
+    }
+</script>
 
 </html>
