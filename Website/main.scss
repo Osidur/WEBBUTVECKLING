@@ -4,46 +4,51 @@ body {
     margin: 0px;
 }
 
-.wrapper {
+#wrapper {
     display: grid;
     grid-template-rows: 10vh 80vh 10vh;
-    align-items: center;
 }
 
 .header {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    align-items: center;
+    grid-template-columns: repeat(8, auto);
 }
 
-.text {
-    @include text(150%, bold);
-    align-items: center;
-}
-
-.logo {
-    @include text(400%, bold);
+.header>div {
+    margin: auto;
+    align-self: center;
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .content {
     display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-    align-items: center;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    background-color: #fff;
+    color: #444;
 }
 
-.contenttext {
-    width: 50%;
-    @include text(140%, normal);
-    margin-left: 25%;
+.content>div {
+    border: solid black 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
 }
 
-.color {
-    @include text(350%, bold);
-    margin-left: 20%;
+.b {
+    grid-column: auto / span 1;
 }
 
 .footer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    align-items: center;
+    grid-template-columns: repeat(4, auto);
+}
+
+.footer>div {
+    margin: auto;
+    align-self: center;
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
 }
