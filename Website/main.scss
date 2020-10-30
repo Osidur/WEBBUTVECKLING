@@ -21,24 +21,44 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+button {
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 150%;
+}
+
 .content {
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 500px 500px 100px;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(10, 10%);
     background-color: #fff;
     color: #444;
 }
 
 .content>div {
-    border: solid black 1px;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 5px;
     padding: 20px;
-    font-size: 150%;
+    font-size: 110%;
 }
 
-.b {
-    grid-column: auto / span 1;
+#text {
+    @include pos(3, 6, 3, 4, 1);
+    grid-column: 3 / 6;
+    grid-row:  3;
+}
+
+#bigtext {
+    @include pos(3, 9, 2, 3, 1);
+    @include text(400%, bold)
+}
+
+#gradient {
+    grid-column: 7 / 9;
+    grid-row: 1 / 11;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 30%, rgba(160,0,0,1) 100%);
+    z-index: 0;
 }
 
 .footer {

@@ -1,1 +1,12 @@
 //https://gridbyexample.com/examples/example29/
+
+@mixin text($fs, $fw) {
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin pos($cs, $ce, $gs, $ge, $z) {
+    grid-column: $cs / $ce;
+    grid-row: $gs / $ge;
+    z-index: $z;
+}
