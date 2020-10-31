@@ -6,21 +6,21 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 10vh 80vh 10vh;
-      grid-template-rows: 10vh 80vh 10vh;
+  grid-template-rows: 10vh 80vh 10vh;
 }
 
 .header {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[8];
-      grid-template-columns: repeat(8, auto);
+  grid-template-columns: repeat(8, auto);
 }
 
-.header > div {
+.header>div {
   margin: auto;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   font-size: 150%;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -36,14 +36,14 @@ button {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (12.5%)[8];
-      grid-template-columns: repeat(8, 12.5%);
+  grid-template-columns: repeat(8, 12.5%);
   -ms-grid-rows: (10%)[10];
-      grid-template-rows: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
   background-color: #fff;
   color: #444;
 }
 
-.content > div {
+.content>div {
   font-family: Arial, Helvetica, sans-serif;
   padding: 20px;
   font-size: 110%;
@@ -80,15 +80,16 @@ button {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[4];
-      grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(4, auto);
 }
 
-.footer > div {
+.footer>div {
   margin: auto;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   font-size: 150%;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 /*# sourceMappingURL=main.css.map */
