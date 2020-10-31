@@ -1,4 +1,4 @@
-@import "./functions";
+@import "./functions.scss";
 
 body {
     margin: 0px;
@@ -43,7 +43,7 @@ button {
 }
 
 #text {
-    @include pos(3, 6, 3, 4, 1);
+    @include pos($3, $6, $3, $4, $1);
 }
 
 #bigtext {
