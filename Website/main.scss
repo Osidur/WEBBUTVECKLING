@@ -51,6 +51,10 @@ button {
     @include text(400%, bold);
 }
 
+#logo {
+    @include text(400%, bold);
+}
+
 #gradient {
     grid-column: 7 / 9;
     grid-row: 1 / 11;
