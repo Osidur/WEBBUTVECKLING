@@ -1,4 +1,4 @@
-@import "./functions";
+@import 'functions';
 
 body {
     margin: 0px;
@@ -43,11 +43,11 @@ button {
 }
 
 #text {
-    @include pos(3, 6, 3, 4, 1);
+    @include pos(3, 2, 3, 1, 1);
 }
 
 #bigtext {
-    @include pos(3, 9, 2, 3, 2);
+    @include pos(3, 6, 2, 1, 2);
     @include text(400%, bold);
 }
 
@@ -58,8 +58,8 @@ button {
 #gradient {
     grid-column: 7 / 9;
     grid-row: 1 / 11;
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(0,0,0,0) 30%, rgba(160,0,0,1) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 30%, rgba(160, 0, 0, 1) 100%);
     z-index: 0;
 }
 

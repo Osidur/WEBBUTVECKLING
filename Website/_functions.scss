@@ -4,7 +4,7 @@
 }
 
 @mixin pos($cs, $ce, $gs, $ge, $z) {
-    grid-column: $cs / $ce;
-    grid-row: $gs / $ge;
+    grid-column: $cs / span $ce;
+    grid-row: $gs / span $ge;
     z-index: $z;
 }
