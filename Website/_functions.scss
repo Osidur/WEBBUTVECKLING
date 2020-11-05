@@ -21,7 +21,7 @@
     z-index: $z;
 }
 
-@mixin gradient($deg, $ar, $ag, $ab, $ao, $acent, $bdeg, $br, $bg, $bb, $bo, $bcent) {
+@mixin gradient($deg, $ar, $ag, $ab, $ao, $acent, $br, $bg, $bb, $bo, $bcent) {
     background: linear-gradient($deg, rgba($ar, $ag, $ab, $ao) $acent, rgba($br, $bg, $bb, $bo) $bcent);
 }
 
@@ -29,4 +29,3 @@
     background-color: $bc;
     color: $c;
 }
-
